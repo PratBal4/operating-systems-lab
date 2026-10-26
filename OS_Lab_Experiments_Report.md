@@ -20,6 +20,15 @@
 10. [Experiment 7: Deadlock Avoidance using Banker's Algorithm](#experiment-7-deadlock-avoidance-using-bankers-algorithm)
 11. [Experiment 8 (Part A): CPU Scheduling — First-Come, First-Served (FCFS)](#experiment-8-part-a-cpu-scheduling--first-come-first-served-fcfs)
 12. [Experiment 8 (Part B): CPU Scheduling — Shortest Job First (SJF Non-Preemptive)](#experiment-8-part-b-cpu-scheduling--shortest-job-first-sjf-non-preemptive)
+13. [Experiment 9 (Part A): CPU Scheduling — Priority Scheduling (Non-Preemptive)](#experiment-9-part-a-cpu-scheduling--priority-scheduling-non-preemptive)
+14. [Experiment 9 (Part B): CPU Scheduling — Round Robin (RR)](#experiment-9-part-b-cpu-scheduling--round-robin-rr)
+15. [Experiment 10: Page Replacement — First-In, First-Out (FIFO)](#experiment-10-page-replacement--first-in-first-out-fifo)
+16. [Experiment 11 (Part A): Page Replacement — Least Recently Used (LRU)](#experiment-11-part-a-page-replacement--least-recently-used-lru)
+17. [Experiment 11 (Part B): Page Replacement — Least Frequently Used (LFU)](#experiment-11-part-b-page-replacement--least-frequently-used-lfu)
+18. [Experiment 12 (Part A): Memory Allocation — Best Fit Policy](#experiment-12-part-a-memory-allocation--best-fit-policy)
+19. [Experiment 12 (Part B): Memory Allocation — Worst Fit Policy](#experiment-12-part-b-memory-allocation--worst-fit-policy)
+20. [Experiment 13 (Part A): Disk Scheduling — First-Come, First-Served (FCFS)](#experiment-13-part-a-disk-scheduling--first-come-first-served-fcfs)
+21. [Experiment 13 (Part B): Disk Scheduling — SCAN (Elevator) Algorithm](#experiment-13-part-b-disk-scheduling--scan-elevator-algorithm)
 
 ---
 
@@ -65,7 +74,7 @@ int main()
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.08.42.png`
+<img src="Screenshot 2026-10-08 at 09.08.42.png" width="700" alt="Experiment 1 Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp1_fork_output
@@ -112,7 +121,7 @@ int main()
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.08.57.png`
+<img src="Screenshot 2026-10-08 at 09.08.57.png" width="700" alt="Experiment 2A Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp2_srmist
@@ -161,7 +170,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.09.09.png`
+<img src="Screenshot 2026-10-08 at 09.09.09.png" width="700" alt="Experiment 2B Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp2_child_count
@@ -224,7 +233,7 @@ int main()
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.09.24.png`
+<img src="Screenshot 2026-10-08 at 09.09.24.png" width="700" alt="Experiment 2C Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp2_process_id
@@ -308,7 +317,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.09.33.png`
+<img src="Screenshot 2026-10-08 at 09.09.33.png" width="700" alt="Experiment 3 Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp3_multithreading
@@ -479,7 +488,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.09.52.png`
+<img src="Screenshot 2026-10-08 at 09.09.52.png" width="700" alt="Experiment 4A Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp4_semaphore
@@ -604,7 +613,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.10.03.png`
+<img src="Screenshot 2026-10-08 at 09.10.03.png" width="700" alt="Experiment 4B Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp4_monitor
@@ -704,7 +713,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.10.20.png`
+<img src="Screenshot 2026-10-08 at 09.10.20.png" width="700" alt="Experiment 5 Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp5_reader_writer
@@ -855,7 +864,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.14.16.png`
+<img src="Screenshot 2026-10-08 at 09.14.16.png" width="700" alt="Experiment 6 Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp6_dining_philosophers
@@ -996,7 +1005,7 @@ int main() {
 | **P5** | 4 3 3 | 0 0 2 | **4 3 1** |
 
 ### 5. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.17.18.png`
+<img src="Screenshot 2026-10-08 at 09.17.18.png" width="700" alt="Experiment 7 Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp7_bankers
@@ -1137,7 +1146,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.18.52.png`
+<img src="Screenshot 2026-10-08 at 09.18.52.png" width="700" alt="Experiment 8A Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp8_fcfs
@@ -1238,7 +1247,7 @@ int main() {
 ```
 
 ### 4. Output
-**Screenshot Reference:** `Screenshot 2026-10-08 at 09.18.59.png`
+<img src="Screenshot 2026-10-08 at 09.18.59.png" width="700" alt="Experiment 8B Output" />
 
 ```
 balajipratyush4@Pratyushs-MacBook-Air code % ./exp8_sjf
@@ -1268,3 +1277,907 @@ Average Turnaround Time=10.000000
 - Total Turnaround Time = $2 + 5 + 9 + 14 + 20 = 50$
 - $\text{Average Turnaround Time} = \frac{50}{5} = 10.000000$
 - Notice that scheduling the shortest burst first resulted in a significantly lower average waiting time (6.0) compared to unsorted FCFS execution.
+
+---
+
+## Experiment 9 (Part A): CPU Scheduling — Priority Scheduling (Non-Preemptive)
+
+### 1. Aim
+To implement non-preemptive Priority CPU scheduling algorithm and calculate individual Waiting Times, Turnaround Times, and system averages.
+
+### 2. Theory & Concepts
+In Priority Scheduling:
+- Each process is assigned a priority value. In this convention, lower numeric value represents higher priority.
+- The CPU is allocated to the process with the highest priority (smallest priority number).
+- Selection sort rearranges processes in order of ascending priority number.
+- Waiting time for process $i$: $WT[i] = \sum_{j=0}^{i-1} BT[j]$.
+- Turnaround time for process $i$: $TAT[i] = BT[i] + WT[i]$.
+
+### 3. Source Code (`exp9_priority.cpp`)
+```cpp
+// Experiment 9 (Part A): Priority CPU Scheduling
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bt[20], p[20], wt[20], tat[20], pr[20], i, j, n, total = 0, pos, temp;
+    float avg_wt, avg_tat;
+
+    cout << "Enter Total Number of Process:";
+    cin >> n;
+
+    cout << "\nEnter Burst Time and Priority\n";
+    for (i = 0; i < n; i++) {
+        cout << "\nP[" << i + 1 << "]\n";
+        cout << "Burst Time:";
+        cin >> bt[i];
+        cout << "Priority:";
+        cin >> pr[i];
+        p[i] = i + 1; // contains process number
+    }
+
+    // sorting burst time, priority and process number in ascending order using selection sort
+    for (i = 0; i < n; i++) {
+        pos = i;
+        for (j = i + 1; j < n; j++) {
+            if (pr[j] < pr[pos])
+                pos = j;
+        }
+        temp = pr[i];
+        pr[i] = pr[pos];
+        pr[pos] = temp;
+
+        temp = bt[i];
+        bt[i] = bt[pos];
+        bt[pos] = temp;
+
+        temp = p[i];
+        p[i] = p[pos];
+        p[pos] = temp;
+    }
+
+    wt[0] = 0; // waiting time for first process is zero
+
+    // calculate waiting time
+    for (i = 1; i < n; i++) {
+        wt[i] = 0;
+        for (j = 0; j < i; j++)
+            wt[i] += bt[j];
+        total += wt[i];
+    }
+
+    avg_wt = (float)total / n; // average waiting time
+    total = 0;
+
+    cout << "\nProcess\t Burst Time \tWaiting Time\tTurnaround Time";
+    for (i = 0; i < n; i++) {
+        tat[i] = bt[i] + wt[i]; // calculate turnaround time
+        total += tat[i];
+        cout << "\nP[" << p[i] << "]\t\t " << bt[i] << "\t\t " << wt[i] << "\t\t\t" << tat[i];
+    }
+
+    avg_tat = (float)total / n; // average turnaround time
+    cout << "\n\nAverage Waiting Time=" << avg_wt;
+    cout << "\nAverage Turnaround Time=" << avg_tat << endl;
+
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.46.13.png" width="700" alt="Experiment 9A Output" />
+
+```
+Enter Total Number of Process:5
+
+Enter Burst Time and Priority
+
+P[1]
+Burst Time:3
+Priority:6
+
+P[2]
+Burst Time:2
+Priority:1
+
+P[3]
+Burst Time:6
+Priority:1
+
+P[4]
+Burst Time:9
+Priority:6
+
+P[5]
+Burst Time:6
+Priority:4
+
+Process	 Burst Time 	Waiting Time	Turnaround Time
+P[2]		 2		 0			2
+P[3]		 6		 2			8
+P[5]		 6		 8			14
+P[4]		 9		 14			23
+P[1]		 3		 23			26
+
+Average Waiting Time=9.4
+Average Turnaround Time=14.6
+```
+
+### 5. Detailed Output Analysis
+- Selection sort orders processes by priority: $P_2 (\text{Priority } 1) \to P_3 (\text{Priority } 1) \to P_5 (\text{Priority } 4) \to P_4 (\text{Priority } 6) \to P_1 (\text{Priority } 6)$.
+- Total Waiting Time = $0 + 2 + 8 + 14 + 23 = 47$
+- $\text{Average Waiting Time} = \frac{47}{5} = 9.4$
+- Total Turnaround Time = $2 + 8 + 14 + 23 + 26 = 73$
+- $\text{Average Turnaround Time} = \frac{73}{5} = 14.6$
+
+
+---
+
+## Experiment 9 (Part B): CPU Scheduling — Round Robin (RR)
+
+### 1. Aim
+To implement Round Robin (RR) CPU scheduling algorithm with a fixed time quantum ($q = 2$).
+
+### 2. Theory & Concepts
+- Round Robin is a preemptive scheduling algorithm designed especially for time-sharing systems.
+- A small unit of time, called a **time quantum** or time slice (here $q=2$), is defined.
+- The ready queue is treated as a circular FIFO queue.
+- If a process's CPU burst exceeds $q$, it is preempted and put back at the end of the queue.
+
+### 3. Source Code (`exp9_round_robin.cpp`)
+```cpp
+// Experiment 9 (Part B): Round Robin CPU Scheduling
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Function to find the waiting time for all processes
+void findWaitingTime(int processes[], int n, int bt[], int wt[], int quantum) {
+    vector<int> rem_bt(n);
+    for (int i = 0; i < n; i++)
+        rem_bt[i] = bt[i];
+
+    int t = 0; // Current time
+
+    while (1) {
+        bool done = true;
+        for (int i = 0; i < n; i++) {
+            if (rem_bt[i] > 0) {
+                done = false;
+
+                if (rem_bt[i] > quantum) {
+                    t += quantum;
+                    rem_bt[i] -= quantum;
+                } else {
+                    t = t + rem_bt[i];
+                    wt[i] = t - bt[i];
+                    rem_bt[i] = 0;
+                }
+            }
+        }
+        if (done == true)
+            break;
+    }
+}
+
+// Function to calculate turnaround time
+void findTurnAroundTime(int processes[], int n, int bt[], int wt[], int tat[]) {
+    for (int i = 0; i < n; i++)
+        tat[i] = bt[i] + wt[i];
+}
+
+// Function to calculate average time
+void findavgTime(int processes[], int n, int bt[], int quantum) {
+    vector<int> wt(n), tat(n);
+    int total_wt = 0, total_tat = 0;
+
+    findWaitingTime(processes, n, bt, wt.data(), quantum);
+    findTurnAroundTime(processes, n, bt, wt.data(), tat.data());
+
+    cout << "PN\t \tBT \t WT \tTAT\n";
+    for (int i = 0; i < n; i++) {
+        total_wt = total_wt + wt[i];
+        total_tat = total_tat + tat[i];
+        cout << " " << i + 1 << "\t\t" << bt[i] << "\t " << wt[i] << "\t\t " << tat[i] << endl;
+    }
+
+    cout << "Average waiting time = " << (float)total_wt / (float)n;
+    cout << "\nAverage turn around time = " << (float)total_tat / (float)n << endl;
+}
+
+// Driver code
+int main() {
+    int processes[] = {1, 2, 3};
+    int n = sizeof(processes) / sizeof(processes[0]);
+    int burst_time[] = {10, 5, 8};
+    int quantum = 2;
+
+    findavgTime(processes, n, burst_time, quantum);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.46.41.png" width="700" alt="Experiment 9B Output" />
+
+```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp9_round_robin
+PN	 	BT 	 WT 	TAT
+ 1		10	 13		 23
+ 2		5	 10		 15
+ 3		8	 13		 21
+Average waiting time = 12
+Average turn around time = 19.6667
+```
+
+### 5. Detailed Output Analysis
+- Gantt Chart Execution ($q = 2$):
+  $[0-2: P_1] \to [2-4: P_2] \to [4-6: P_3] \to [6-8: P_1] \to [8-10: P_2] \to [10-12: P_3] \to [12-14: P_1] \to [14-15: P_2 \text{ done}] \to [15-17: P_3] \to [17-19: P_1] \to [19-21: P_3 \text{ done}] \to [21-23: P_1 \text{ done}]$.
+- Completion Times: $P_2 = 15$, $P_3 = 21$, $P_1 = 23$.
+- Waiting Times:
+  - $WT(P_1) = 23 - 10 = 13$
+  - $WT(P_2) = 15 - 5 = 10$
+  - $WT(P_3) = 21 - 8 = 13$
+- $\text{Average Waiting Time} = \frac{13 + 10 + 13}{3} = \frac{36}{3} = 12.0$
+- $\text{Average Turnaround Time} = \frac{23 + 15 + 21}{3} = \frac{59}{3} = 19.6667$
+
+---
+
+## Experiment 10: Page Replacement — First-In, First-Out (FIFO)
+
+### 1. Aim
+To implement the First-In, First-Out (FIFO) page replacement algorithm and determine the total number of page faults for a reference string.
+
+### 2. Theory & Concepts
+- The FIFO page replacement algorithm associates with each page the time when that page was brought into memory.
+- When a page must be replaced, the oldest page (the one brought in first) is chosen.
+- A circular queue or modulo index `(pageFaults - 1) % frames` tracks the victim frame.
+
+### 3. Source Code (`exp10_fifo.c`)
+```c
+// Experiment 10: FIFO Page Replacement Algorithm
+#include <stdio.h>
+
+int main() {
+    int incomingStream[] = {4, 1, 2, 4, 5};
+    int pageFaults = 0;
+    int frames = 3;
+    int m, n, s, pages;
+
+    pages = sizeof(incomingStream) / sizeof(incomingStream[0]);
+
+    printf("Incoming \t Frame 1 \t Frame 2 \t Frame 3");
+    int temp[frames];
+    for (m = 0; m < frames; m++) {
+        temp[m] = -1;
+    }
+
+    for (m = 0; m < pages; m++) {
+        s = 0;
+        for (n = 0; n < frames; n++) {
+            if (incomingStream[m] == temp[n]) {
+                s++;
+                pageFaults--;
+            }
+        }
+        pageFaults++;
+
+        if ((pageFaults <= frames) && (s == 0)) {
+            temp[(pageFaults - 1) % frames] = incomingStream[m];
+        } else if (s == 0) {
+            temp[(pageFaults - 1) % frames] = incomingStream[m];
+        }
+
+        printf("\n");
+        printf("%d\t\t\t", incomingStream[m]);
+        for (n = 0; n < frames; n++) {
+            if (temp[n] != -1)
+                printf(" %d\t\t\t", temp[n]);
+            else
+                printf(" - \t\t\t");
+        }
+    }
+    printf("\nTotal Page Faults:\t%d\n", pageFaults);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.46.59.png" width="700" alt="Experiment 10 Output" />
+
+```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp10_fifo
+Incoming 	 Frame 1 	 Frame 2 	 Frame 3
+4			 4			 - 			 - 			
+1			 4			 1			 - 			
+2			 4			 1			 2			
+4			 4			 1			 2			
+5			 5			 1			 2			
+Total Page Faults:	4
+```
+
+
+### 5. Detailed Output Analysis
+- Reference stream: `{4, 1, 2, 4, 5}` with 3 frames:
+  1. Page 4: Fault $\to$ Frame: `[4, -, -]`
+  2. Page 1: Fault $\to$ Frame: `[4, 1, -]`
+  3. Page 2: Fault $\to$ Frame: `[4, 1, 2]`
+  4. Page 4: **HIT** $\to$ Frame remains: `[4, 1, 2]`
+  5. Page 5: Fault $\to$ Replaces oldest page (4 in Frame 1) $\to$ Frame: `[5, 1, 2]`
+- Total Page Faults = 4. Total Hits = 1.
+
+---
+
+## Experiment 11 (Part A): Page Replacement — Least Recently Used (LRU)
+
+### 1. Aim
+To implement the Least Recently Used (LRU) page replacement algorithm and compute total page faults.
+
+### 2. Theory & Concepts
+- LRU replaces the page that has not been used for the longest period of time.
+- It approximates optimal replacement by looking backward in time: for each frame, it searches backward in the reference string to compute the time/distance elapsed since its last reference.
+- The frame with the maximum backward distance is chosen as the replacement candidate.
+
+### 3. Source Code (`exp11_lru.c`)
+```c
+// Experiment 11 (Part A): Least Recently Used (LRU) Page Replacement Algorithm
+#include <stdio.h>
+#include <limits.h>
+
+int checkHit(int incomingPage, int queue[], int occupied) {
+    for (int i = 0; i < occupied; i++) {
+        if (incomingPage == queue[i])
+            return 1;
+    }
+    return 0;
+}
+
+void printFrame(int queue[], int occupied) {
+    for (int i = 0; i < occupied; i++)
+        printf("%d\t\t\t", queue[i]);
+}
+
+int main() {
+    int incomingStream[] = {7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1};
+    int n = sizeof(incomingStream) / sizeof(incomingStream[0]);
+    int frames = 3;
+    int queue[n];
+    int distance[n];
+    int occupied = 0;
+    int pagefault = 0;
+
+    printf("Page\t Frame1 \t Frame2 \t Frame3\n");
+
+    for (int i = 0; i < n; i++) {
+        printf("%d: \t\t", incomingStream[i]);
+
+        if (checkHit(incomingStream[i], queue, occupied)) {
+            printFrame(queue, occupied);
+        } else if (occupied < frames) {
+            queue[occupied] = incomingStream[i];
+            pagefault++;
+            occupied++;
+            printFrame(queue, occupied);
+        } else {
+            int max = INT_MIN;
+            int index = -1;
+
+            for (int j = 0; j < frames; j++) {
+                distance[j] = 0;
+                for (int k = i - 1; k >= 0; k--) {
+                    ++distance[j];
+                    if (queue[j] == incomingStream[k])
+                        break;
+                }
+                if (distance[j] > max) {
+                    max = distance[j];
+                    index = j;
+                }
+            }
+            queue[index] = incomingStream[i];
+            printFrame(queue, occupied);
+            pagefault++;
+        }
+        printf("\n");
+    }
+
+    printf("Page Fault: %d\n", pagefault);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.47.27.png" width="700" alt="Experiment 11A Output" />
+
+```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp11_lru
+Page	 Frame1 	 Frame2 	 Frame3
+7: 		7			
+0: 		7			0			
+1: 		7			0			1			
+2: 		2			0			1			
+0: 		2			0			1			
+3: 		2			0			3			
+0: 		2			0			3			
+4: 		4			0			3			
+2: 		4			0			2			
+3: 		4			3			2			
+0: 		0			3			2			
+3: 		0			3			2			
+2: 		0			3			2			
+1: 		1			3			2			
+Page Fault: 10
+```
+
+### 5. Detailed Output Analysis
+- Reference stream length: 14. Available frames: 3.
+- Page faults occur at 10 reference accesses.
+- Page hits occur at 4 accesses: step 5 (page 0), step 7 (page 0), step 12 (page 3), and step 13 (page 2).
+- Total Page Faults = 10.
+
+---
+
+## Experiment 11 (Part B): Page Replacement — Least Frequently Used (LFU)
+
+### 1. Aim
+To implement the Least Frequently Used (LFU) page replacement algorithm.
+
+### 2. Theory & Concepts
+- The LFU algorithm replaces the page with the smallest reference count.
+- If two or more pages have identical reference frequencies, FIFO arrival order acts as a tiebreaker.
+
+### 3. Source Code (`exp11_lfu.c`)
+```c
+// Experiment 11 (Part B): Least Frequently Used (LFU) Page Replacement Algorithm
+#include <stdio.h>
+#include <limits.h>
+
+int checkHit(int incomingPage, int queue[], int occupied) {
+    for (int i = 0; i < occupied; i++) {
+        if (incomingPage == queue[i])
+            return i;
+    }
+    return -1;
+}
+
+void printFrame(int queue[], int occupied) {
+    for (int i = 0; i < occupied; i++)
+        printf("%d\t\t\t", queue[i]);
+}
+
+int main() {
+    int incomingStream[] = {7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1};
+    int n = sizeof(incomingStream) / sizeof(incomingStream[0]);
+    int frames = 3;
+    int queue[3], freq[3], arrival[3];
+    int occupied = 0, pagefault = 0;
+
+    for (int i = 0; i < frames; i++) {
+        queue[i] = -1;
+        freq[i] = 0;
+        arrival[i] = 0;
+    }
+
+    printf("Page\t Frame1 \t Frame2 \t Frame3\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d: \t\t", incomingStream[i]);
+        int hitIndex = checkHit(incomingStream[i], queue, occupied);
+
+        if (hitIndex != -1) {
+            freq[hitIndex]++;
+            printFrame(queue, occupied);
+        } else if (occupied < frames) {
+            queue[occupied] = incomingStream[i];
+            freq[occupied] = 1;
+            arrival[occupied] = i;
+            occupied++;
+            pagefault++;
+            printFrame(queue, occupied);
+        } else {
+            int minFreq = INT_MAX, replaceIndex = -1, oldestArrival = INT_MAX;
+            for (int j = 0; j < frames; j++) {
+                if (freq[j] < minFreq) {
+                    minFreq = freq[j];
+                    replaceIndex = j;
+                    oldestArrival = arrival[j];
+                } else if (freq[j] == minFreq && arrival[j] < oldestArrival) {
+                    replaceIndex = j;
+                    oldestArrival = arrival[j];
+                }
+            }
+            queue[replaceIndex] = incomingStream[i];
+            freq[replaceIndex] = 1;
+            arrival[replaceIndex] = i;
+            pagefault++;
+            printFrame(queue, occupied);
+        }
+        printf("\n");
+    }
+    printf("Page Fault: %d\n", pagefault);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.47.13.png" width="700" alt="Experiment 11B Output" />
+
+```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp11_lfu
+Page	 Frame1 	 Frame2 	 Frame3
+7: 		7			
+0: 		7			0			
+1: 		7			0			1			
+2: 		2			0			1			
+0: 		2			0			1			
+3: 		2			0			3			
+0: 		2			0			3			
+4: 		4			0			3			
+2: 		4			0			2			
+3: 		3			0			2			
+0: 		3			0			2			
+3: 		3			0			2			
+2: 		3			0			2			
+1: 		3			0			1			
+Page Fault: 9
+```
+
+### 5. Detailed Output Analysis
+- Total Page Faults = 9. Total Hits = 5.
+- Demonstrates how frequently referenced pages (such as 0) remain pinned in frames longer.
+
+---
+
+## Experiment 12 (Part A): Memory Allocation — Best Fit Policy
+
+### 1. Aim
+To implement the Best Fit contiguous memory allocation policy and observe memory utilization.
+
+### 2. Theory & Concepts
+- The Best Fit strategy allocates the smallest hole (block) that is big enough to accommodate the requesting process:
+  $$\min \{ \text{blockSize}[j] \mid \text{blockSize}[j] \ge \text{processSize}[i] \text{ and } \text{unallocated} \}$$
+- This minimizes the leftover internal fragmentation produced per allocation.
+
+### 3. Source Code (`exp12_best_fit.c`)
+```c
+// Experiment 12 (Part A): Best Fit Memory Management Policy
+#include <stdio.h>
+
+void implementBestFit(int blockSize[], int blocks, int processSize[], int processes) {
+    int allocation[processes];
+    int occupied[blocks];
+
+    for (int i = 0; i < processes; i++)
+        allocation[i] = -1;
+
+    for (int i = 0; i < blocks; i++)
+        occupied[i] = 0;
+
+    for (int i = 0; i < processes; i++) {
+        int indexPlaced = -1;
+        for (int j = 0; j < blocks; j++) {
+            if (blockSize[j] >= processSize[i] && !occupied[j]) {
+                if (indexPlaced == -1)
+                    indexPlaced = j;
+                else if (blockSize[j] < blockSize[indexPlaced])
+                    indexPlaced = j;
+            }
+        }
+        if (indexPlaced != -1) {
+            allocation[i] = indexPlaced;
+            occupied[indexPlaced] = 1;
+        }
+    }
+
+    printf("\nProcess No.\tProcess Size\tBlock no.\n");
+    for (int i = 0; i < processes; i++) {
+        printf("%d \t\t\t %d \t\t\t", i + 1, processSize[i]);
+        if (allocation[i] != -1)
+            printf("%d\n", allocation[i] + 1);
+        else
+            printf("Not Allocated\n");
+    }
+}
+
+int main() {
+    int blockSize[] = {100, 50, 30, 120, 35};
+    int processSize[] = {40, 10, 30, 60};
+    int blocks = sizeof(blockSize) / sizeof(blockSize[0]);
+    int processes = sizeof(processSize) / sizeof(processSize[0]);
+
+    implementBestFit(blockSize, blocks, processSize, processes);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.47.39.png" width="700" alt="Experiment 12A Output" />
+
+```
+Process No.	Process Size	Block no.
+1 			 40 			2
+2 			 10 			3
+3 			 30 			5
+4 			 60 			1
+```
+
+### 5. Detailed Output Analysis
+- Available blocks: $B_1(100), B_2(50), B_3(30), B_4(120), B_5(35)$.
+- $P_1(40) \to B_2(50)$ (waste = 10)
+- $P_2(10) \to B_3(30)$ (waste = 20)
+- $P_3(30) \to B_5(35)$ (waste = 5)
+- $P_4(60) \to B_1(100)$ (waste = 40)
+- All 4 processes successfully placed with minimal leftover fragments.
+
+---
+
+## Experiment 12 (Part B): Memory Allocation — Worst Fit Policy
+
+### 1. Aim
+To implement the Worst Fit contiguous memory allocation policy and observe block fragmentation.
+
+### 2. Theory & Concepts
+- The Worst Fit strategy allocates the largest available hole:
+  $$\max \{ \text{blockSize}[j] \mid \text{blockSize}[j] \ge \text{processSize}[i] \text{ and } \text{unallocated} \}$$
+- The rationale is that the leftover fragment after allocation will be large enough to remain useful. However, it can exhaust large blocks quickly, preventing larger future processes from finding adequate memory.
+
+### 3. Source Code (`exp12_worst_fit.c`)
+```c
+// Experiment 12 (Part B): Worst Fit Memory Management Policy
+#include <stdio.h>
+
+void implementWorstFit(int blockSize[], int blocks, int processSize[], int processes) {
+    int allocation[processes];
+    int occupied[blocks];
+
+    for (int i = 0; i < processes; i++)
+        allocation[i] = -1;
+
+    for (int i = 0; i < blocks; i++)
+        occupied[i] = 0;
+
+    for (int i = 0; i < processes; i++) {
+        int indexPlaced = -1;
+        for (int j = 0; j < blocks; j++) {
+            if (blockSize[j] >= processSize[i] && !occupied[j]) {
+                if (indexPlaced == -1)
+                    indexPlaced = j;
+                else if (blockSize[indexPlaced] < blockSize[j])
+                    indexPlaced = j;
+            }
+        }
+        if (indexPlaced != -1) {
+            allocation[i] = indexPlaced;
+            occupied[indexPlaced] = 1;
+            blockSize[indexPlaced] -= processSize[i];
+        }
+    }
+
+    printf("\nProcess No.\tProcess Size\tBlock no.\n");
+    for (int i = 0; i < processes; i++) {
+        printf("%d \t\t\t %d \t\t\t", i + 1, processSize[i]);
+        if (allocation[i] != -1)
+            printf("%d\n", allocation[i] + 1);
+        else
+            printf("Not Allocated\n");
+    }
+}
+
+int main() {
+    int blockSize[] = {100, 50, 30, 120, 35};
+    int processSize[] = {40, 10, 30, 60};
+    int blocks = sizeof(blockSize) / sizeof(blockSize[0]);
+    int processes = sizeof(processSize) / sizeof(processSize[0]);
+
+    implementWorstFit(blockSize, blocks, processSize, processes);
+    return 0;
+}
+```
+
+### 4. Output
+<img src="Screenshot 2026-10-26 at 19.47.48.png" width="700" alt="Experiment 12B Output" />
+
+```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp12_worst_fit
+
+Process No.	Process Size	Block no.
+1 			 40 			4
+2 			 10 			1
+3 			 30 			2
+4 			 60 			Not Allocated
+```
+
+
+### 5. Detailed Output Analysis
+- Available blocks: $B_1(100), B_2(50), B_3(30), B_4(120), B_5(35)$.
+- $P_1(40) \to B_4(120)$ (largest block)
+- $P_2(10) \to B_1(100)$ (next largest)
+- $P_3(30) \to B_2(50)$ (next largest)
+- $P_4(60) \to$ Remaining unallocated blocks are $B_3(30)$ and $B_5(35)$. Neither block is $\ge 60$.
+- Hence, $P_4$ is **Not Allocated**, demonstrating the hazard of Worst Fit depleting large blocks.
+
+---
+
+## Experiment 13 (Part A): Disk Scheduling — First-Come, First-Served (FCFS)
+
+### 1. Aim
+To implement the First-Come, First-Served (FCFS) disk arm scheduling algorithm and compute the total head movement in cylinders.
+
+### 2. Theory & Concepts
+- In FCFS disk scheduling, I/O track requests are serviced strictly in arrival order.
+- Total head movement:
+  $$\text{Total Movement} = \sum_{i=0}^{n-1} |RQ[i] - \text{initial}_{i}|$$
+
+### 3. Source Code (`exp13_fcfs_disk.c`)
+```c
+// Experiment 13 (Part A): FCFS Disk Scheduling Algorithm
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int RQ[100], i, n, TotalHeadMoment = 0, initial;
+
+    printf("Enter the number of Requests\n");
+    scanf("%d", &n);
+
+    printf("Enter the Requests sequence\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &RQ[i]);
+
+    printf("Enter initial head position\n");
+    scanf("%d", &initial);
+
+    // logic for FCFS disk scheduling
+    for (i = 0; i < n; i++) {
+        TotalHeadMoment = TotalHeadMoment + abs(RQ[i] - initial);
+        initial = RQ[i];
+    }
+
+    printf("Total head movement is %d\n", TotalHeadMoment);
+    return 0;
+}
+```
+
+### 4. Output
+```
+Enter the number of Requests
+8
+Enter the Requests sequence
+95 180 34 119 11 123 62 64
+Enter initial head position
+50
+Total head movement is 644
+```
+
+### 5. Detailed Output Analysis
+- Initial head position: 50
+- Head trajectory:
+  $50 \to 95 \ (|45|) \to 180 \ (|85|) \to 34 \ (|146|) \to 119 \ (|85|) \to 11 \ (|108|) \to 123 \ (|112|) \to 62 \ (|61|) \to 64 \ (|2|)$.
+- Total head movement $= 45 + 85 + 146 + 85 + 108 + 112 + 61 + 2 = 644$ cylinders.
+
+---
+
+## Experiment 13 (Part B): Disk Scheduling — SCAN (Elevator) Algorithm
+
+### 1. Aim
+To implement the SCAN (Elevator) disk head scheduling algorithm in both inward (low) and outward (high) directions.
+
+### 2. Theory & Concepts
+- In SCAN disk scheduling, the disk arm starts at one end of the disk and moves toward the other end, servicing requests as it reaches each cylinder until it hits the end of the disk.
+- At the disk boundary (0 or max size $- 1$), the arm reverses direction and services requests in the opposite direction.
+
+### 3. Source Code (`exp13_scan_disk.c`)
+```c
+// Experiment 13 (Part B): SCAN (Elevator) Disk Scheduling Algorithm
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int RQ[100], i, j, n, TotalHeadMoment = 0, initial, size, move;
+
+    printf("Enter the number of Requests\n");
+    scanf("%d", &n);
+
+    printf("Enter the Requests sequence\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &RQ[i]);
+
+    printf("Enter initial head position\n");
+    scanf("%d", &initial);
+
+    printf("Enter total disk size\n");
+    scanf("%d", &size);
+
+    printf("Enter the head movement direction for high 1 and for low 0\n");
+    scanf("%d", &move);
+
+    // Sort the request array
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (RQ[j] > RQ[j + 1]) {
+                int temp = RQ[j];
+                RQ[j] = RQ[j + 1];
+                RQ[j + 1] = temp;
+            }
+        }
+    }
+
+    int index = n;
+    for (i = 0; i < n; i++) {
+        if (initial < RQ[i]) {
+            index = i;
+            break;
+        }
+    }
+
+    // if movement is towards high value
+    if (move == 1) {
+        for (i = index; i < n; i++) {
+            TotalHeadMoment = TotalHeadMoment + abs(RQ[i] - initial);
+            initial = RQ[i];
+        }
+        // last movement for max size
+        TotalHeadMoment = TotalHeadMoment + abs(size - RQ[i - 1] - 1);
+        initial = size - 1;
+        for (i = index - 1; i >= 0; i--) {
+            TotalHeadMoment = TotalHeadMoment + abs(RQ[i] - initial);
+            initial = RQ[i];
+        }
+    }
+    // if movement is towards low value
+    else {
+        for (i = index - 1; i >= 0; i--) {
+            TotalHeadMoment = TotalHeadMoment + abs(RQ[i] - initial);
+            initial = RQ[i];
+        }
+        // last movement for min size
+        TotalHeadMoment = TotalHeadMoment + abs(RQ[i + 1] - 0);
+        initial = 0;
+        for (i = index; i < n; i++) {
+            TotalHeadMoment = TotalHeadMoment + abs(RQ[i] - initial);
+            initial = RQ[i];
+        }
+    }
+
+    printf("Total head movement is %d\n", TotalHeadMoment);
+    return 0;
+}
+```
+
+### 4. Output
+**Case 1: Moving towards low value (direction 0):**
+```
+Enter the number of Requests
+8
+Enter the Requests sequence
+95 180 34 119 11 123 62 64
+Enter initial head position
+50
+Enter total disk size
+200
+Enter the head movement direction for high 1 and for low 0
+0
+Total head movement is 230
+```
+
+**Case 2: Moving towards high value (direction 1):**
+```
+Enter the number of Requests
+8
+Enter the Requests sequence
+95 180 34 119 11 123 62 64
+Enter initial head position
+50
+Enter total disk size
+200
+Enter the head movement direction for high 1 and for low 0
+1
+Total head movement is 337
+```
+
+### 5. Detailed Output Analysis
+- In Case 1 (towards 0):
+  - Inward sweep: $50 \to 34 \to 11 \to 0$ (movement = $50$).
+  - Reversal and outward sweep: $0 \to 62 \to 64 \to 95 \to 119 \to 123 \to 180$ (movement = $180$).
+  - Total head movement $= 50 + 180 = 230$ tracks.
+- Compared with FCFS (644), SCAN drastically optimizes seek overhead to 230 tracks (a 64.3% reduction).
+
