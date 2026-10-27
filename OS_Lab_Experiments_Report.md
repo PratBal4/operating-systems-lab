@@ -1368,6 +1368,7 @@ int main() {
 <img src="Screenshot 2026-10-26 at 19.46.13.png" width="700" alt="Experiment 9A Output" />
 
 ```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp9_priority
 Enter Total Number of Process:5
 
 Enter Burst Time and Priority
@@ -1893,6 +1894,8 @@ int main() {
 <img src="Screenshot 2026-10-26 at 19.47.39.png" width="700" alt="Experiment 12A Output" />
 
 ```
+balajipratyush4@Pratyushs-MacBook-Air code % ./exp12_best_fit
+
 Process No.	Process Size	Block no.
 1 			 40 			2
 2 			 10 			3
