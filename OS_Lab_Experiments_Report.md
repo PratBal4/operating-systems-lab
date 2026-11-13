@@ -29,6 +29,8 @@
 19. [Experiment 12 (Part B): Memory Allocation — Worst Fit Policy](#experiment-12-part-b-memory-allocation--worst-fit-policy)
 20. [Experiment 13 (Part A): Disk Scheduling — First-Come, First-Served (FCFS)](#experiment-13-part-a-disk-scheduling--first-come-first-served-fcfs)
 21. [Experiment 13 (Part B): Disk Scheduling — SCAN (Elevator) Algorithm](#experiment-13-part-b-disk-scheduling--scan-elevator-algorithm)
+22. [Experiment 14 (Part A): File Allocation — Indexed Allocation Strategy](#experiment-14-part-a-file-allocation--indexed-allocation-strategy)
+23. [Experiment 14 (Part B): File Allocation — Sequential (Contiguous) Allocation Strategy](#experiment-14-part-b-file-allocation--sequential-contiguous-allocation-strategy)
 
 ---
 
@@ -2183,4 +2185,210 @@ Total head movement is 337
   - Reversal and outward sweep: $0 \to 62 \to 64 \to 95 \to 119 \to 123 \to 180$ (movement = $180$).
   - Total head movement $= 50 + 180 = 230$ tracks.
 - Compared with FCFS (644), SCAN drastically optimizes seek overhead to 230 tracks (a 64.3% reduction).
+
+---
+
+## Experiment 14 (Part A): File Allocation — Indexed Allocation Strategy
+
+### 1. Aim
+To write a C program to simulate the Indexed File Allocation strategy and demonstrate direct access of non-contiguous disk blocks using a dedicated index block.
+
+### 2. Theory & Concepts
+- **Indexed File Allocation:** In this method, a dedicated disk block called the **index block** contains pointers (block addresses) to all the data blocks occupied by a file.
+- **Key Advantages:**
+  - Supports direct (random) access to blocks without needing to traverse preceding blocks sequentially.
+  - Eliminates external fragmentation because any free disk block anywhere on the disk can be allocated to the file.
+- **Overhead:** Space overhead is incurred to store index blocks. For very small files, dedicating an entire block as an index can lead to memory underutilization.
+
+### 3. Source Code (`exp14_indexed.c`)
+```c
+// Experiment 14 (Part A): Simulation of Indexed File Allocation Strategy
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int f[50], index[50], i, n, j, c, k, ind, count = 0;
+
+    // Initialize all disk blocks as unallocated (0)
+    for (i = 0; i < 50; i++)
+        f[i] = 0;
+
+x:
+    printf("Enter the index block: ");
+    if (scanf("%d", &ind) != 1)
+        return 0;
+
+    if (ind < 0 || ind >= 50) {
+        printf("Invalid index block! Must be between 0 and 49.\n");
+        goto x;
+    }
+
+    if (f[ind] != 1) {
+        printf("Enter no of blocks needed and no of files for the index %d on the disk : \n", ind);
+        if (scanf("%d", &n) != 1)
+            return 0;
+    } else {
+        printf("%d index is already allocated \n", ind);
+        goto x;
+    }
+
+y:
+    count = 0;
+    for (i = 0; i < n; i++) {
+        if (scanf("%d", &index[i]) != 1)
+            return 0;
+        if (index[i] >= 0 && index[i] < 50 && f[index[i]] == 0)
+            count++;
+    }
+
+    if (count == n) {
+        for (j = 0; j < n; j++)
+            f[index[j]] = 1;
+        f[ind] = 1;
+        printf("Allocated\n");
+        printf("File Indexed\n");
+        for (k = 0; k < n; k++)
+            printf("%d-------->%d : %d\n", ind, index[k], f[index[k]]);
+    } else {
+        printf("File in the index is already allocated \n");
+        printf("Enter another file indexed\n");
+        goto y;
+    }
+
+    printf("Do you want to enter more file(Yes - 1/No - 0): ");
+    if (scanf("%d", &c) != 1)
+        return 0;
+
+    if (c == 1)
+        goto x;
+    else
+        return 0;
+}
+```
+
+### 4. Output
+```
+Enter the index block: 5
+Enter no of blocks needed and no of files for the index 5 on the disk : 
+3
+2 3 4
+Allocated
+File Indexed
+5-------->2 : 1
+5-------->3 : 1
+5-------->4 : 1
+Do you want to enter more file(Yes - 1/No - 0): 1
+Enter the index block: 5
+5 index is already allocated 
+Enter the index block: 6
+Enter no of blocks needed and no of files for the index 6 on the disk : 
+2
+2 7
+File in the index is already allocated 
+Enter another file indexed
+8 9
+Allocated
+File Indexed
+6-------->8 : 1
+6-------->9 : 1
+Do you want to enter more file(Yes - 1/No - 0): 0
+```
+
+### 5. Detailed Output Analysis
+- Index block `5` was assigned 3 disk blocks: `2`, `3`, and `4`. Each was marked as allocated (`f[block] = 1`).
+- When an attempt was made to reuse block `5` as an index block, the collision check detected that block `5` was already allocated.
+- For new index block `6`, when block `2` was requested (which was already in use by block `5`), allocation was rejected with `"File in the index is already allocated"`. Upon entering alternative free blocks `8` and `9`, allocation succeeded.
+
+---
+
+## Experiment 14 (Part B): File Allocation — Sequential (Contiguous) Allocation Strategy
+
+### 1. Aim
+To write a C program to simulate the Sequential (Contiguous) File Allocation strategy and demonstrate contiguous block mapping on disk.
+
+### 2. Theory & Concepts
+- **Sequential (Contiguous) Allocation:** In this strategy, each file occupies a set of contiguous blocks on disk.
+- **Directory Entry:** Defined simply by the disk address of the starting block (`st`) and the length of the allocated portion (`len`).
+- **Key Characteristics:**
+  - Excellent read performance for sequential and direct access due to minimal disk head movement.
+  - Suffer from external fragmentation and difficulty in dynamically sizing files without knowing pre-allocation limits.
+
+### 3. Source Code (`exp14_sequential.c`)
+```c
+// Experiment 14 (Part B): Simulation of Sequential File Allocation Strategy
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int f[50], i, st, len, j, c, k, count = 0;
+
+    // Initialize all disk blocks as free (0)
+    for (i = 0; i < 50; i++)
+        f[i] = 0;
+
+    printf("Files Allocated are : \n");
+
+x:
+    count = 0;
+    printf("Enter starting block and length of files: ");
+    if (scanf("%d%d", &st, &len) != 2)
+        return 0;
+
+    if (st >= 0 && (st + len) <= 50) {
+        for (k = st; k < (st + len); k++) {
+            if (f[k] == 0)
+                count++;
+        }
+    }
+
+    if (len > 0 && len == count) {
+        for (j = st; j < (st + len); j++) {
+            if (f[j] == 0) {
+                f[j] = 1;
+                printf("%d\t%d\n", j, f[j]);
+            }
+        }
+        printf("The file is allocated to disk\n");
+    } else {
+        printf("The file is not allocated \n");
+    }
+
+    printf("Do you want to enter more file(Yes - 1/No - 0): ");
+    if (scanf("%d", &c) != 1)
+        return 0;
+
+    if (c == 1)
+        goto x;
+    else
+        return 0;
+}
+```
+
+### 4. Output
+```
+Files Allocated are : 
+Enter starting block and length of files: 4 5
+4	1
+5	1
+6	1
+7	1
+8	1
+The file is allocated to disk
+Do you want to enter more file(Yes - 1/No - 0): 1
+Enter starting block and length of files: 2 3
+The file is not allocated 
+Do you want to enter more file(Yes - 1/No - 0): 1
+Enter starting block and length of files: 9 3
+9	1
+10	1
+11	1
+The file is allocated to disk
+Do you want to enter more file(Yes - 1/No - 0): 0
+```
+
+### 5. Detailed Output Analysis
+- The first file requested 5 contiguous blocks starting at block 4. Blocks 4 through 8 were free and allocated.
+- The second file requested 3 blocks starting at block 2 (blocks 2, 3, and 4). Because block 4 was already occupied by the first file, contiguous allocation failed and reported `"The file is not allocated"`.
+- The third file requested 3 contiguous blocks starting at block 9 (blocks 9, 10, and 11), which were completely free and allocated successfully.
+
 
